@@ -69,14 +69,16 @@
         android:id="@+id/button23"
         android:layout_width="100dp"
         android:layout_height="130dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
         android:background="@android:color/transparent"
         app:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button11"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883" />
 
     <Button
         android:id="@+id/button24"
@@ -97,22 +99,35 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/x_5" />
 
     <Button
         android:id="@+id/button25"
-        android:layout_width="63dp"
-        android:layout_height="38dp"
+        android:layout_width="86dp"
+        android:layout_height="40dp"
         android:layout_marginStart="150dp"
-        android:background="@android:color/transparent"
-        app:backgroundTint="@android:color/transparent"
+        android:onClick="transition"
+        android:text="Next"
+        app:backgroundTint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button22"
-        android:onClick="transition"/>
+        app:layout_constraintTop_toBottomOf="@+id/button22" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="86dp"
+        android:layout_height="40dp"
+        android:text="back"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/button25"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button23"
+        app:layout_constraintVertical_bias="0.512" />
 </androidx.constraintlayout.widget.ConstraintLayout>

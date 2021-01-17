@@ -108,27 +108,27 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="72dp"
-        android:layout_height="34dp"
+        android:layout_width="86dp"
+        android:layout_height="40dp"
         android:contentDescription="Next"
         android:onClick="transition"
-        android:background="@android:color/transparent"
-        app:backgroundTint="@android:color/transparent"
+        android:text="Next"
+        app:backgroundTint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintHorizontal_bias="0.741"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.972" />
+        app:layout_constraintVertical_bias="0.975" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="72dp"
-        android:layout_height="36dp"
+        android:layout_width="86dp"
+        android:layout_height="40dp"
         android:contentDescription="Back"
         android:onClick="transition"
-        android:background="@android:color/transparent"
-        app:backgroundTint="@android:color/transparent"
+        android:text="back"
+        app:backgroundTint="@android:color/holo_red_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.303"
