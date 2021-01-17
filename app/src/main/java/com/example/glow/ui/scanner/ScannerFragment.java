@@ -23,13 +23,6 @@ public class ScannerFragment extends Fragment {
         scanViewModel =
                 new ViewModelProvider(this).get(ScannerViewModel.class);
         View root = inflater.inflate(R.layout.fragment_scanner, container, false);
-        final TextView textView = root.findViewById(R.id.text_scanner);
-        scanViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 }
