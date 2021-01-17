@@ -12,30 +12,36 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/x_1_2" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="250dp"
-        android:layout_height="49dp"
-        android:text="Sign Up"
+        android:layout_width="271dp"
+        android:layout_height="63dp"
+        android:textColorHint="#FFFFFF"
+        app:backgroundTint="#00FFFFFF"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.633" />
+        app:layout_constraintVertical_bias="0.631"
+        app:strokeColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="247dp"
-        android:layout_height="45dp"
-        android:text="Log In"
+        android:layout_width="267dp"
+        android:layout_height="69dp"
+        app:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintVertical_bias="0.737" />
 </androidx.constraintlayout.widget.ConstraintLayout>
