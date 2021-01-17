@@ -30,6 +30,7 @@ public class ProductsFragment extends Fragment {
                 textView.setText(s);
             }
         });
+        productsViewModel.setFile_name(this.getContext().getFilesDir());
         return root;
     }
 }

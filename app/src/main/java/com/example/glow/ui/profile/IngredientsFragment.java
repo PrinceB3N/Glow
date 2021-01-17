@@ -15,22 +15,13 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.glow.R;
 import com.example.glow.ui.utility.Profile;
 
-public class ProfileFragment extends Fragment {
-
-    private ProfileViewModel profileViewModel;
+public class IngredientsFragment extends Fragment {
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        profileViewModel =
-                new ViewModelProvider(this).get(ProfileViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_profile, container, false);
+        View root = inflater.inflate(R.layout.fragment_ingredients, container, false);
         final TextView textView = root.findViewById(R.id.text_profile);
-        profileViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        profileViewModel.setFile_name(getContext().getFilesDir());
+
         return root;
     }
 }
