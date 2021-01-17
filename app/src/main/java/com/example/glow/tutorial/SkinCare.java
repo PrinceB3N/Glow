@@ -1,12 +1,15 @@
 package com.example.glow.tutorial;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.glow.R;
@@ -26,7 +29,7 @@ public class SkinCare extends AppCompatActivity {
         setContentView(R.layout.test3);
         ImageView i = findViewById(R.id.imageView3);
     }
-    void transition(View view) {
+    public void transition(View view) {
         boolean state = false;
         switch(view.getId()){
             case R.id.button6:
@@ -63,7 +66,10 @@ public class SkinCare extends AppCompatActivity {
             view.setAlpha(0f);
         }
         else{
-            view.setBackgroundColor(Color.LTGRAY);
+            Drawable buttonDrawable = view.getBackground();
+            buttonDrawable = DrawableCompat.wrap(buttonDrawable);
+            DrawableCompat.setTint(buttonDrawable, Color.LTGRAY);
+            view.setBackground(buttonDrawable);
             view.setAlpha(0.5f);
         }
 

@@ -20,12 +20,27 @@
             android:value="barcode" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".tutorial.Login"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".tutorial.SkinType">
+        </activity>
+        <activity
+            android:name=".tutorial.SkinCare">
+        </activity>
+        <activity
+            android:name=".tutorial.Ingredients">
+        </activity>
+        <activity
+            android:name=".tutorial.Final">
+        </activity>
+        <activity
+            android:name=".MainActivity">
         </activity>
         <activity android:name=".ScanBarcodeActivity"
             android:label="Scan Barcode"/>

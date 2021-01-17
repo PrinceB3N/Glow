@@ -2,11 +2,13 @@ package com.example.glow.tutorial;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.drawable.DrawableCompat;
 
 import com.example.glow.R;
 
@@ -20,27 +22,27 @@ public class Ingredients extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test3);
-        ImageView i = findViewById(R.id.imageView3);
+        setContentView(R.layout.test5);
+        ImageView i = findViewById(R.id.imageView5);
     }
-    void transition(View view) {
+    public void transition(View view) {
         boolean state = false;
-        switch(view.getId()){
+        switch (view.getId()) {
             case R.id.button6:
                 first = !first;
-                state =first;
+                state = first;
                 break;
             case R.id.button7:
                 second = !second;
-                state =second;
+                state = second;
                 break;
             case R.id.button8:
                 third = !third;
-                state =third;
+                state = third;
                 break;
             case R.id.button9:
                 fourth = !fourth;
-                state =fourth;
+                state = fourth;
                 break;
             case R.id.button10:
                 fifth = !fifth;
@@ -50,7 +52,7 @@ public class Ingredients extends AppCompatActivity {
                 sixth = !sixth;
                 state = sixth;
                 break;
-            case R.id.button3:
+            case R.id.button25:
                 Intent myIntent = new Intent(this, Final.class);
                 this.startActivity(myIntent);
                 return;
@@ -60,7 +62,11 @@ public class Ingredients extends AppCompatActivity {
             view.setAlpha(0f);
         }
         else{
-            view.setBackgroundColor(Color.LTGRAY);
+            Drawable buttonDrawable = view.getBackground();
+            buttonDrawable = DrawableCompat.wrap(buttonDrawable);
+            DrawableCompat.setTint(buttonDrawable, Color.LTGRAY);
+            view.setBackground(buttonDrawable);
             view.setAlpha(0.5f);
         }
+    }
 }
