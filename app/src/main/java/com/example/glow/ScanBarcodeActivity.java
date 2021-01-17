@@ -9,18 +9,16 @@ import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+import androidx.core.app.ActivityCompat;
+
 import com.google.android.gms.common.api.CommonStatusCodes;
-import com.google.android.gms.common.wrappers.PackageManagerWrapper;
+/*import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
-import com.google.android.gms.vision.CameraSource;
-
-import androidx.annotation.NonNull;
-import androidx.core.app.ActivityCompat;
-
+*/
 public class ScanBarcodeActivity extends Activity{
-    SurfaceView cameraPreview;
+    /*SurfaceView cameraPreview;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -84,4 +82,6 @@ public class ScanBarcodeActivity extends Activity{
             }
         });
     }
+    */
+
 }

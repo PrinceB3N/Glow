@@ -28,7 +28,8 @@
         app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.976"
+        android:onClick="transition"/>
 
     <Button
         android:id="@+id/button6"
@@ -38,11 +39,13 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
-        android:text="Dehydrated"
+        android:background="@android:color/transparent"
+        app:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toStartOf="@+id/button7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="transition"/>
 
     <Button
         android:id="@+id/button7"
@@ -51,10 +54,23 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="40dp"
-        android:text="Sensitive"
         app:layout_constraintBottom_toTopOf="@+id/button9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="transition"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="transition"
+        android:text="Dry"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button9"
@@ -64,7 +80,8 @@
         android:layout_marginBottom="40dp"
         android:text="Oily"
         app:layout_constraintBottom_toTopOf="@+id/button11"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="transition"/>
 
     <Button
         android:id="@+id/button10"
@@ -76,7 +93,8 @@
         android:text="Acne"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button11"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="transition"/>
 
     <Button
         android:id="@+id/button11"
@@ -86,17 +104,7 @@
         android:layout_marginBottom="15dp"
         android:text="Normal"
         app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="transition"/>
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="100dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="40dp"
-        android:text="Dry"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
-        app:layout_constraintEnd_toStartOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
